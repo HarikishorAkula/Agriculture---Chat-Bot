@@ -1,28 +1,6 @@
 streamlit==1.32.2
-<<<<<<< HEAD
 pinecone-client==3.2.2
 google-generativeai==0.8.6
 sentence-transformers==5.4.1
 pdfplumber==0.10.3
 tiktoken==0.6.0
-=======
-
-# Core AI + embeddings
-sentence-transformers==2.6.1
-
-# Google Gemini
-google-generativeai>=0.5.2
-
-# Vector DB
-pinecone-client>=3.2.2
-
-# LangChain (optional but keep compatible)
-langchain>=0.1.16
-langchain-google-genai>=1.0.3
-
-# PDF processing
-pdfplumber>=0.10.3
-
-# 🔥 IMPORTANT FIX
-Pillow>=10.4.0
->>>>>>> 003693977dcdf54b342cb6a174c0441bc7114d63
