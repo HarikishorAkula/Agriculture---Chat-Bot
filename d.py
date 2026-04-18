@@ -1,7 +1,8 @@
 import streamlit as st
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone
-
+import os
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
 # ----------------------------
 # PAGE CONFIG
 # ----------------------------
@@ -18,7 +19,7 @@ embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 # ----------------------------
 # PINECONE INIT
 # ----------------------------
-pc = Pinecone(api_key="pcsk_2u5baP_KxS8L6nqv1W44Z26pSRsWaoZE3sYcqMq54BDKQ1M6qnqRHbYHaih1YFr4zwb8Y3")
+pc = Pinecone(api_key=PINECONE_API_KEY)
 index = pc.Index("agriculture-chatbot")
 
 # ----------------------------
